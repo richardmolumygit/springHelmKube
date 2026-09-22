@@ -1,0 +1,16 @@
+replicaCount: 1
+
+image:
+  repository: rich-demo
+  tag: local
+  pullPolicy: IfNotPresent
+
+service:
+  type: NodePort
+  port: 9090
+  targetPort: 9090
+  nodePort: 30090
+
+containerPort: 9090
+
+resources: {}
